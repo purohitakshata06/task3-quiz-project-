@@ -2,43 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Pastel Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Webpage</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Welcome to My Webpage</h1>
-  </header>
 
-  <div class="quote">
-    <p id="typing-text"></p>
-  </div>
-
-  <section class="container">
-    <div class="card about">
+    <section class="about">
       <h2>About Me</h2>
-      <p>I’m in my 4th year of Electronics & Communication Engineering and currently learning HTML, CSS, and JavaScript!</p>
-    </div>
+      <p>
+        I'm currently in my 4th year of Electronics & Communication Engineering,
+        learning HTML, CSS, and JavaScript. Exploring the world of web development
+        with excitement!
+      </p>
+    </section>
 
-    <div class="card contact">
-      <h2>Contact</h2>
-      <p>Email: purohitakshata06@gmail.com</p>
-    </div>
-  </section>
+    <section class="motivation">
+      <h2>Motivation of the Day 💡</h2>
+      <p id="quote">Click below to get inspired!</p>
+      <button id="quote-btn">✨ Inspire Me</button>
+    </section>
 
-  <section class="quiz-section">
-    <h2>Mini Quiz: Let's Test Your Knowledge!</h2>
-    <div id="quiz-box">
-      <p id="question">Loading question...</p>
-      <div id="options"></div>
-      <button id="next-btn" disabled>Next</button>
-    </div>
-  </section>
+    <section class="quiz">
+      <h2>Simple Quiz 🧠</h2>
+      <p>What does HTML stand for?</p>
+      <button class="option">HyperText Makeup Language</button>
+      <button class="option correct">HyperText Markup Language</button>
+      <button class="option">HighText Machine Language</button>
+      <p id="quiz-result"></p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Akshata</p>
-  </footer>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:purohitakshata06@gmail.com">purohitakshata06@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>✨ You are capable of amazing things. Keep pushing forward! ✨</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
